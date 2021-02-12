@@ -1,5 +1,6 @@
 package com.mp.entity;
 
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -8,4 +9,5 @@ public class User {
     private Long id;
     private String username;
     private String password;
+    private Boolean logicDelete;
 }

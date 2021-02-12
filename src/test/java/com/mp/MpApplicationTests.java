@@ -24,4 +24,10 @@ class MpApplicationTests {
         userList.forEach(System.out::println);
     }
 
+    @Test
+    public void testDelete() {
+        System.out.println("------ delete method test ------");
+        userMapper.deleteById(2);
+    }
+
 }
